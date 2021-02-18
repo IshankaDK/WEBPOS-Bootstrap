@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - WEBPOS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assest/bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="container-fluid ">
+        <a class="navbar-brand text-white" href="#">DashBoard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#customerform">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#itemform">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#">Order</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info text-white" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!--<div class="container-fluid mt-5 " >-->
+<!--    <div class="row justify-content-around" >-->
+<!--        <div class="col-2 bg-warning text-white" style="width: 300px">-->
+<!--          <h1 class="p-3" style="font-size: 40px">20</h1>-->
+<!--            <h1 class="p-2" style="font-size: 30px">Customers</h1>-->
+<!--        </div>-->
+<!--        <div class="col-2 bg-success text-white" style="width: 300px">-->
+<!--            <h1 class="p-3" style="font-size: 40px">50</h1>-->
+<!--            <h1 class="p-2"  style="font-size: 30px">Items</h1>-->
+<!--        </div>-->
+<!--        <div class="col-2 bg-primary text-white" style="width: 300px">-->
+<!--            <h1 class="p-3" style="font-size: 40px">40</h1>-->
+<!--            <h1 class="p-2"  style="font-size: 30px">Orders</h1>-->
+<!--        </div>-->
+<!--        <div class="col-2 bg-danger text-white" style="width: 300px">-->
+<!--            <h1 class="p-3" style="font-size: 40px">05</h1>-->
+<!--            <h1 class="p-2" style="font-size: 30px">Pending Orders</h1>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;Customer Form&ndash;&gt;-->
+
+<!--<div class="container-fluid mt-5" id="customerform">-->
+<!--    <h1 class="mx-3">Customer Form</h1>-->
+<!--    <table class="table table-hover border mt-3 p-3">-->
+<!--        <thead class="bg-info">-->
+<!--        <tr>-->
+<!--            <th scope="col">Customer ID</th>-->
+<!--            <th scope="col">Customer Name</th>-->
+<!--            <th scope="col">Customer Address</th>-->
+<!--            <th scope="col">Customer Contact</th>-->
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody class="bg-secondary text-white">-->
+<!--        <tr>-->
+<!--            <th>1</th>-->
+<!--            <td>Mark</td>-->
+<!--            <td>New York</td>-->
+<!--            <td>2615587965</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <th>2</th>-->
+<!--            <td>Jacob</td>-->
+<!--            <td>Tokyo</td>-->
+<!--            <td>2615587965</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <th>3</th>-->
+<!--            <td>Larry</td>-->
+<!--            <td>Honk Kong</td>-->
+<!--            <td>45456504078998</td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+<!--</div>-->
+
+<!--<div style="position:absolute; right: 50px">-->
+<!--    <button type="button" class="btn btn-outline-primary">ADD</button>-->
+<!--    <button type="button" class="btn btn-outline-info">UPDATE</button>-->
+<!--    <button type="button" class="btn btn-outline-danger">DELETE</button>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;Item Form&ndash;&gt;-->
+
+<!--<div class="container-fluid mt-5 " id="itemform">-->
+<!--    <h1 class="mx-3">Item Form</h1>-->
+<!--    <table class="table table-hover border mt-3 p-3  ">-->
+<!--        <thead class="bg-info">-->
+<!--        <tr>-->
+<!--            <th scope="col">Item Code</th>-->
+<!--            <th scope="col">Description</th>-->
+<!--            <th scope="col">Qty On Hand</th>-->
+<!--            <th scope="col">Unit Price</th>-->
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody class="bg-secondary text-white">-->
+<!--        <tr>-->
+<!--            <th>I001</th>-->
+<!--            <td>Rice</td>-->
+<!--            <td>50</td>-->
+<!--            <td>110</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <th>I002</th>-->
+<!--            <td>Coconut</td>-->
+<!--            <td>100</td>-->
+<!--            <td>85s</td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+<!--</div>-->
+
+<!--<div style="position:absolute; right: 50px">-->
+<!--    <button type="button" class="btn btn-outline-primary">ADD</button>-->
+<!--    <button type="button" class="btn btn-outline-info">UPDATE</button>-->
+<!--    <button type="button" class="btn btn-outline-danger">DELETE</button>-->
+<!--</div>-->
+
+<!--Order Form-->
+
+<div class="container-fluid mt-5 " id="orderform">
+    <h1 class="mx-3">Order Form</h1>
+    <div class="row mt-3 p-3">
+        <div class="col-4">
+           <div class="bg-white card">
+               <div class="bg-danger card-header text-white" style="font-size: 25px">
+                   Invoice Details
+               </div>
+               <div class="card-body bg-white text-dark">
+                   <div class="row p-2 mt-3">
+                       <div class="form-group col-5 ">
+                           <lable>Order ID:</lable>
+                           <input type="text" id="txtOrderId" class="form-control">
+                       </div>
+                       <div class="form-group col-7 ">
+                           <lable>Order Date:</lable>
+                           <input type="date" id="txtDate" class="form-control">
+                       </div>
+                   </div>
+                   <div class="row p-2 mt-3">
+                       <div class="form-group col-6">
+                           <lable>Select Customer ID:</lable>
+                           <select class="form-control" id="cmbCustomerId">
+                               <option selected="selected" disabled="disabled">-Select Customer-</option>
+                           </select>
+                       </div>
+                       <div class="form-group col-6">
+                           <lable>Customer ID:</lable>
+                           <input type="text" id="txtCustomerId" class="form-control" disabled>
+                       </div>
+                   </div>
+                   <div class="row p-2 mt-3">
+                       <div class="form-group col-6">
+                           <lable>Customer Name:</lable>
+                           <input type="text" id="txtCustomerName" class="form-control" disabled>
+                       </div>
+                       <div class="form-group col-6">
+                           <lable>Customer Contact:</lable>
+                           <input type="text" id="txtCustomerContact" class="form-control" disabled>
+                       </div>
+                   </div>
+                   <div class="row p-2 mt-3">
+                       <div class="form-group col-12">
+                           <lable>Customer Address:</lable>
+                           <input type="text" id="txtCustomerAddress" class="form-control" disabled>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+        <div class="col-4">
+            <div class="bg-white card">
+                <div class="bg-danger card-header text-white" style="font-size: 25px">
+                    Item Details
+                </div>
+                <div class="card-body bg-white text-dark">
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-6">
+                            <lable>Select Item Code:</lable>
+                            <select class="form-control" id="cmbItemCode">
+                                <option selected="selected" disabled="disabled">-Select Item-</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-6 ">
+                            <lable>Item Code:</lable>
+                            <input type="text" id="txtItemCodde" class="form-control" disabled>
+                        </div>
+                    </div>
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable>Description:</lable>
+                            <input type="text" id="txtDescription" class="form-control" disabled>
+                        </div>
+                    </div>
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-6">
+                            <lable>QTY on Hand:</lable>
+                            <input type="text" id="txtQtyOnHand" class="form-control" disabled>
+                        </div>
+                        <div class="form-group col-6">
+                            <lable>Unit Price</lable>
+                            <input type="text" id="txtUnitPrice" class="form-control" disabled>
+                        </div>
+                    </div>
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-8">
+                            <lable>Order Quantity</lable>
+                            <input type="text" id="txtOrderQTY" class="form-control">
+                        </div>
+                        <div class="form-group col-4 mt-4">
+                            <button type="submit" class="btn btn-outline-success">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="assest/bootstrap/js/bootstrap.js">
+</body>
+</html>
