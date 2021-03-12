@@ -10,7 +10,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
     <div class="container-fluid ">
-        <a class="navbar-brand text-white" href="#">DashBoard</a>
+        <a class="navbar-brand text-white" href="#" id="btnDashboard">DashBoard</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -18,13 +18,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="#customerform">Customer</a>
+                    <a class="nav-link text-white" aria-current="page" href="#customerform"
+                       id="btnCustomer">Customer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#itemform">Item</a>
+                    <a class="nav-link text-white" href="#itemform" id="btnItem">Item</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="#">Order</a>
+                    <a class="nav-link text-white" aria-current="page" href="#orderform" id="btnOrder">Order</a>
                 </li>
             </ul>
             <form class="d-flex">
@@ -35,19 +36,19 @@
     </div>
 </nav>
 
-<div class="container-fluid mt-5 " >
-    <div class="row justify-content-around" >
+<div class="container-fluid mt-5 " id="dashboardform">
+    <div class="row justify-content-around">
         <div class="col-2 bg-warning text-white" style="width: 300px">
-          <h1 class="p-3" style="font-size: 40px">20</h1>
+            <h1 class="p-3" style="font-size: 40px">20</h1>
             <h1 class="p-2" style="font-size: 30px">Customers</h1>
         </div>
         <div class="col-2 bg-success text-white" style="width: 300px">
             <h1 class="p-3" style="font-size: 40px">50</h1>
-            <h1 class="p-2"  style="font-size: 30px">Items</h1>
+            <h1 class="p-2" style="font-size: 30px">Items</h1>
         </div>
         <div class="col-2 bg-primary text-white" style="width: 300px">
             <h1 class="p-3" style="font-size: 40px">40</h1>
-            <h1 class="p-2"  style="font-size: 30px">Orders</h1>
+            <h1 class="p-2" style="font-size: 30px">Orders</h1>
         </div>
         <div class="col-2 bg-danger text-white" style="width: 300px">
             <h1 class="p-3" style="font-size: 40px">05</h1>
@@ -74,22 +75,22 @@
                         </div>
                         <div class="form-group col-6">
                             <lable>Customer Name:</lable>
-                            <input type="text" id="txtCustomerName0" class="form-control" >
+                            <input type="text" id="txtCustomerName0" class="form-control">
                         </div>
                     </div>
                     <div class="row p-2 mt-3">
                         <div class="form-group col-12">
                             <lable>Customer Contact:</lable>
-                            <input type="text" id="txtCustomerContact0" class="form-control" >
+                            <input type="text" id="txtCustomerContact0" class="form-control">
                         </div>
                     </div>
                     <div class="row p-2 mt-3">
                         <div class="form-group col-12">
                             <lable>Customer Address:</lable>
-                            <input type="text" id="txtCustomerAddress0" class="form-control" >
+                            <input type="text" id="txtCustomerAddress0" class="form-control">
                         </div>
                     </div>
-                   <div class="row p-2 mt-3">
+                    <div class="row p-2 mt-3">
                         <div class="form-group col-12">
                             <button type="button" class="btn btn-outline-success fw-bold">Add</button>
                             <button type="button" class="btn btn-outline-danger fw-bold">Cancel</button>
@@ -133,8 +134,8 @@
     </div>
 </div>
 
-<div style="position:absolute; right: 50px;">
-   <button type="button" class="btn btn-outline-warning fw-bold">UPDATE</button>
+<div style="position:absolute; right: 50px;" id="customerformbutton">
+    <button type="button" class="btn btn-outline-warning fw-bold">UPDATE</button>
     <button type="button" class="btn btn-outline-danger fw-bold">DELETE</button>
 </div>
 
@@ -156,19 +157,19 @@
                         </div>
                         <div class="form-group col-6">
                             <lable>Item Description:</lable>
-                            <input type="text" id="txtDescription0" class="form-control" >
+                            <input type="text" id="txtDescription0" class="form-control">
                         </div>
                     </div>
                     <div class="row p-2 mt-3">
                         <div class="form-group col-12">
                             <lable>Quantity:</lable>
-                            <input type="text" id="txtQty0" class="form-control" >
+                            <input type="text" id="txtQty0" class="form-control">
                         </div>
                     </div>
                     <div class="row p-2 mt-3">
                         <div class="form-group col-12">
                             <lable>Unit Price:</lable>
-                            <input type="text" id="txtUnitPrice0" class="form-control" >
+                            <input type="text" id="txtUnitPrice0" class="form-control">
                         </div>
                     </div>
                     <div class="row p-2 mt-3">
@@ -209,7 +210,7 @@
     </div>
 </div>
 
-<div style="position:absolute; right: 50px;">
+<div style="position:absolute; right: 50px;" id="itemformbutton">
     <button type="button" class="btn btn-outline-warning fw-bold">UPDATE</button>
     <button type="button" class="btn btn-outline-danger fw-bold">DELETE</button>
 </div>
@@ -304,7 +305,7 @@
                     <div class="row p-2 mt-3">
                         <div class="form-group col-8">
                             <lable>Order Quantity</lable>
-                            <input type="number" min="0"  id="txtOrderQTY" class="form-control">
+                            <input type="number" min="0" id="txtOrderQTY" class="form-control">
                         </div>
                         <div class="form-group col-4 mt-4">
                             <button type="submit" class="btn btn-outline-primary fw-bold">Add to Cart</button>
@@ -329,7 +330,7 @@
                                 <lable><span class="text-primary" style="font-size: 30px">
                                     0.00
                                 </span>
-                                Rs/=
+                                    Rs/=
                                 </lable>
                             </div>
                         </div>
@@ -345,7 +346,7 @@
                                 </lable>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="row p-2 mt-3">
                         <div class="form-group col-6">
                             <div class="col-12">
@@ -374,7 +375,9 @@
                             </div>
                         </div>
                         <div class="form-group col-4">
-                          <button type="submit" class="btn btn-outline-success mt-4 fw-bold" style="text-align: center">Place Order</button>
+                            <button type="submit" class="btn btn-outline-success mt-4 fw-bold"
+                                    style="text-align: center">Place Order
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -399,18 +402,63 @@
             <td>10</td>
             <td>1100</td>
         </tr>
-        <tr>
-            <th>I002</th>
-            <td>Coconut</td>
-            <td>100</td>
-            <td>10</td>
-            <td>1000</td>
-        </tr>
         </tbody>
     </table>
-    </div>
+</div>
+
+<link rel="stylesheet" href="assest/bootstrap/js/bootstrap.js">
+<script>
+    var dashboard = document.getElementById('dashboardform');
+    var customer = document.getElementById('customerform');
+    var item = document.getElementById('itemform');
+    var order = document.getElementById('orderform');
+    var customerformbuttons = document.getElementById('customerformbutton');
+    var itemformbuttons = document.getElementById('itemformbutton');
+
+    customer.style.display = 'none';
+    item.style.display = 'none';
+    order.style.display = 'none';
+    dashboard.style.display = 'block';
+    customerformbuttons.style.display = 'none';
+    itemformbuttons.style.display = 'none';
+
+    document.getElementById('btnDashboard').addEventListener('click', function () {
+        customer.style.display = 'none';
+        item.style.display = 'none';
+        order.style.display = 'none';
+        dashboard.style.display = 'block';
+        customerformbuttons.style.display = 'none';
+        itemformbuttons.style.display = 'none';
+    });
+
+    document.getElementById('btnCustomer').addEventListener('click', function () {
+        dashboard.style.display = 'none';
+        customer.style.display = 'block';
+        item.style.display = 'none';
+        order.style.display = 'none';
+        customerformbuttons.style.display = 'block';
+        itemformbuttons.style.display = 'none';
+    });
+
+    document.getElementById('btnItem').addEventListener('click', function () {
+        dashboard.style.display = 'none';
+        customer.style.display = 'none';
+        item.style.display = 'block';
+        order.style.display = 'none';
+        customerformbuttons.style.display = 'none';
+        itemformbuttons.style.display = 'block';
+    });
+
+    document.getElementById('btnOrder').addEventListener('click', function () {
+        dashboard.style.display = 'none';
+        customer.style.display = 'none';
+        item.style.display = 'none';
+        order.style.display = 'block';
+        customerformbuttons.style.display = 'none';
+        itemformbuttons.style.display = 'none';
+    });
 
 
-    <link rel="stylesheet" href="assest/bootstrap/js/bootstrap.js">
+</script>
 </body>
 </html>
